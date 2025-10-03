@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { TestimonialCard, TestimonialAuthor } from "@/components/ui/testimonial-card"
+import { TestimonialCard, TestimonialAuthor } from "./testimonial-card"
 
 interface TestimonialsSectionProps {
   title: string

@@ -2,8 +2,8 @@
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
-import { RainbowButton } from "./rainbow-button";
-import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
+import { RainbowButton } from "@/components/navbar/rainbow-button"
+import { AnimatedThemeToggler } from "@/components/navbar/animated-theme-toggler";
 import Link from "next/link";
 
 export type NavItem = {

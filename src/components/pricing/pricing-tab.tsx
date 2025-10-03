@@ -4,7 +4,7 @@ import * as React from "react"
 import { motion } from "framer-motion"
 
 import { cn } from "@/lib/utils"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/pricing/badge"
 
 interface TabProps {
   text: string

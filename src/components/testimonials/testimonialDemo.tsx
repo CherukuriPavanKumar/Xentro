@@ -1,4 +1,4 @@
-import { TestimonialsSection } from "@/components/testimonials-with-marquee"
+import { TestimonialsSection } from "./testimonials-with-marquee"
 
 
 const testimonials = [

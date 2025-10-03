@@ -1,11 +1,9 @@
 import React from "react";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import "./globals.css";
-import { FloatingNavDemo } from "@/components/Navbar";
+import { FloatingNavDemo } from "@/components/navbar/Navbar";
 import { GoogleGeminiEffectDemo } from "@/components/google-gemini-demo";
 import BackgroundRippleEffectDemo from "@/components/background-ripple-effect-demo";
-import { MarqueeDemo } from "@/components/marqueeDemo";
-import { ForWhom } from "@/components/forWhom/forWhom";
 
 export default function RootLayout({
   children,

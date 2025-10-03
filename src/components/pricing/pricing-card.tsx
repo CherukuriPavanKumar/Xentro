@@ -5,9 +5,9 @@ import { BadgeCheck, ArrowRight } from "lucide-react"
 import NumberFlow from "@number-flow/react"
 
 import { cn } from "@/lib/utils"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/pricing/badge"
 import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Card } from "@/components/pricing/card"
 
 export interface PricingTier {
   name: string

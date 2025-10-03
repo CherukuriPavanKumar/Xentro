@@ -2,13 +2,13 @@
 import React from "react";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import { GradientButtonDemo, RainbowButtonDemo } from "@/components/buttons"
-import { MarqueeDemo } from "./marqueeDemo";
+import { MarqueeDemo } from "./integrations/marqueeDemo";
 import { ForWhom } from "./forWhom/forWhom";
-import FeaturesDemo from "./features-demo";
-import Comparision from "./comparision";
-import { TestimonialsSectionDemo } from "./testimonialDemo";
-import { PricingSectionDemo } from "./PricingDemo";
-import { Footer } from "./FooterDemo";
+import FeaturesDemo from "./features/features-demo";
+import Comparision from "./about/comparision";
+import { TestimonialsSectionDemo } from "./testimonials/testimonialDemo";
+import { PricingSectionDemo } from "./pricing/PricingDemo";
+import { Footer } from "./footer/FooterDemo";
 
 export default function BackgroundRippleEffectDemo() {
   return (

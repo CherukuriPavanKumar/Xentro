@@ -1,4 +1,4 @@
-import { RainbowButton } from "@/components/ui/rainbow-button"
+import { RainbowButton } from "@/components/navbar/rainbow-button"
 import { GradientButton } from "@/components/ui/gradient-button"
 
 export function RainbowButtonDemo() {

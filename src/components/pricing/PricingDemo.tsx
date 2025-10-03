@@ -1,4 +1,4 @@
-import { PricingSection } from "@/components/ui/pricing-section"
+import { PricingSection } from "./pricing-section"
 
 export const PAYMENT_FREQUENCIES = ["monthly", "yearly"]
 

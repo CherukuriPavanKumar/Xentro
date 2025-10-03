@@ -1,5 +1,5 @@
 import React from 'react'
-import Features from './features/features'
+import Features from './features'
 
 function FeaturesDemo() {
   return (
