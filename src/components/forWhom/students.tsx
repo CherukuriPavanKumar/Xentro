@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Students() {
   return (
@@ -20,6 +21,7 @@ export default function Students() {
           From idea to launch, get the guidance, resources, and feedback you need 
           to move fast and stand out.
         </p>
+        <Link href="/signup">
         <button
           className="px-6 py-3 rounded-xl font-medium
             bg-gradient-to-r from-blue-500 to-cyan-500 text-white
@@ -31,6 +33,7 @@ export default function Students() {
         >
           Start your journey
         </button>
+        </Link>
       </div>
 
       {/* Right Section: Image */}

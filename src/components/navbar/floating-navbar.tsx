@@ -77,9 +77,11 @@ export const FloatingNav = ({
           );
         })}
         <AnimatedThemeToggler />
-        <RainbowButton>
-          Get Started
-        </RainbowButton>
+        <Link href="/login">
+          <RainbowButton>
+            Get Started
+          </RainbowButton>
+        </Link>
     </motion.div>
   );
 };
