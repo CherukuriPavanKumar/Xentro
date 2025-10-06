@@ -469,6 +469,24 @@
   }
 }
 
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+.animate-shine {
+  animation: shine 0.8s ease-in-out;
+}
+
+/* Custom gradient radial utility */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
 /* Animation utility classes */
 .animate-element {
   opacity: 0;

@@ -33,7 +33,7 @@ export const FloatingNav = ({
       }}
       // add data attribute so we can compute offset for smooth scroll
       className={cn(
-        "flex max-w-4xl w-full fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-1.5 items-center justify-center space-x-16",
+        "flex max-w-4xl w-full mx-auto mt-10 mb-6 border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] px-8 py-1.5 items-center justify-center space-x-16",
         className
       )}
       data-floating-nav
