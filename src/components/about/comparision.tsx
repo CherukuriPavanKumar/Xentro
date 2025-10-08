@@ -10,12 +10,12 @@ function Comparision() {
 
       <div className="flex flex-row justify-center max-w-5xl mx-auto gap-5 mt-7 mb-10">
         {/* Xentro Column */}
-        <div className="w-full rounded-3xl p-[2px] bg-gradient-to-r from-indigo-500 to-blue-500">
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 h-full">
-            <h1 className="text-slate-900 dark:text-slate-100 font-bold text-2xl mb-6">
+        <div className="w-full rounded-3xl p-[2px]">
+          <div className="bg-black dark:bg-white rounded-3xl p-6 h-full">
+            <h1 className="text-white dark:text-black font-bold text-2xl mb-6">
               XENTRO
             </h1>
-            <ul className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700 text-black dark:text-slate-200">
+            <ul className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700 text-white dark:text-black">
               <li className="flex items-start gap-3 py-3">
                 <IconCheck className="text-green-500 h-5 w-5 flex-shrink-0 mt-1" />
                 <span>
@@ -32,7 +32,7 @@ function Comparision() {
               </li>
               <li className="flex items-start gap-3 py-3">
                 <IconCheck className="text-green-500 h-5 w-5 flex-shrink-0 mt-1" />
-                <span>Software, design, media, and mentorship in one platform</span>
+                <span>Software, design, media, networking and mentorship in one platform</span>
               </li>
               <li className="flex items-start gap-3 py-3">
                 <IconCheck className="text-green-500 h-5 w-5 flex-shrink-0 mt-1" />
@@ -48,7 +48,7 @@ function Comparision() {
 
         {/* Others Column */}
         <div className="w-full rounded-3xl bg-white dark:bg-slate-900 p-6">
-          <h1 className="text-slate-900 dark:text-slate-100 font-bold text-2xl mb-6">
+          <h1 className="text-black dark:text-white font-bold text-2xl mb-6">
             Others
           </h1>
           <ul className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700 text-black dark:text-slate-200">

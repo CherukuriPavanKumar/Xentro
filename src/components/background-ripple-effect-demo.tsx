@@ -27,10 +27,10 @@ export default function BackgroundRippleEffectDemo() {
         <h2 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-neutral-800 md:text-4xl lg:text-6xl dark:text-neutral-100">
           Igniting India’s Next Generation of Entrepreneurs.
         </h2>
-        <p className="relative z-10 mx-auto mt-4 max-w-xl text-center text-neutral-800 dark:text-neutral-500">
+        <p className="relative z-10 mx-auto mt-4 max-w-2xl text-center text-neutral-800 dark:text-gray-400">
           XENTRO is India’s first digital incubator for students — connecting young innovators with mentors, investors, and institutions to turn ideas into thriving startups.
         </p>
-        <div className="flex justify-center mt-5">
+        <div className="flex justify-center mt-10">
           <GradientButtonDemo />
         </div>
         <MarqueeDemo />

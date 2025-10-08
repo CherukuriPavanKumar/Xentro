@@ -76,8 +76,8 @@ function Footerdemo() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
             <address className="space-y-2 text-sm not-italic">
-              <p>VDC,Gitam University</p>
-              <p>Visakhapatnam , Andhra Pradesh</p>
+              <p>VDC, Gitam University</p>
+              <p>Visakhapatnam, Andhra Pradesh</p>
               <p>Phone: 91+ 79935 04337</p>
               <p>Email: xentro@gmail.com</p>
             </address>
@@ -154,7 +154,7 @@ function Footerdemo() {
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2025 Your Company. All rights reserved.
+            © 2025 Xentro. All rights reserved.
           </p>
           <nav className="flex gap-4 text-sm">
             <a href="#" className="transition-colors hover:text-primary">

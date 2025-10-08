@@ -29,6 +29,7 @@ export function Tab({
       )}
     >
       <span className="relative z-10">{text}</span>
+
       {selected && (
         <motion.span
           layoutId="tab"
@@ -36,12 +37,14 @@ export function Tab({
           className="absolute inset-0 z-0 rounded-full bg-background shadow-sm"
         />
       )}
+
       {discount && (
         <Badge
           variant="secondary"
           className={cn(
             "relative z-10 whitespace-nowrap shadow-none",
-            selected && "bg-muted"
+            // 👇 Removes border when Yearly (discounted) tab is selected
+            selected ? "border-none bg-muted" : ""
           )}
         >
           Save 35%

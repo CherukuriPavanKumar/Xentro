@@ -45,7 +45,7 @@ export function PricingCard({ tier, paymentFrequency }: PricingCardProps) {
       <h2 className="flex items-center gap-3 text-xl font-medium capitalize">
         {tier.name}
         {isPopular && (
-          <Badge variant="secondary" className="mt-1 z-10">
+          <Badge variant="secondary" className="text-lg mt-1 z-10 whitespace-nowrap">
             🔥 Most Popular
           </Badge>
         )}

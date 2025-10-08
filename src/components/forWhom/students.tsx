@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Students() {
   return (
     <section className="w-full py-16 px-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-12
