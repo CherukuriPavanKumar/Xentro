@@ -1,4 +1,3 @@
-// @ts-ignore
 
 "use client";
 import React, { useMemo, useRef, useState } from "react";
@@ -18,7 +17,7 @@ export const BackgroundRippleEffect = ({
     col: number;
   } | null>(null);
   const [rippleKey, setRippleKey] = useState(0);
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
     <div

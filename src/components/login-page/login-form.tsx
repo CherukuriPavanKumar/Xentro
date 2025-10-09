@@ -1,4 +1,3 @@
-// @ts-ignore
 
 "use client"
 
@@ -75,8 +74,10 @@ export function LoginForm({
         }, 1000);
       }
 
-    } catch (error: any) {
-      setMessage({type: 'error', text: error.message || 'An unexpected error occurred'});
+  } catch (error: unknown) {
+  let errorMsg = 'An unexpected error occurred';
+  if (error instanceof Error) errorMsg = error.message;
+  setMessage({type: 'error', text: errorMsg});
     } finally {
       setLoading(false);
     }
@@ -94,7 +95,7 @@ export function LoginForm({
       if (error) {
         setMessage({type: 'error', text: error.message});
       }
-    } catch (error: any) {
+  } catch (error: unknown) {
       setMessage({type: 'error', text: 'Google login failed. Please try again.'});
     }
   };
@@ -118,7 +119,7 @@ export function LoginForm({
       } else {
         setMessage({type: 'success', text: 'Password reset email sent! Check your inbox.'});
       }
-    } catch (error: any) {
+  } catch (error: unknown) {
       setMessage({type: 'error', text: 'Failed to send reset email. Please try again.'});
     } finally {
       setLoading(false);

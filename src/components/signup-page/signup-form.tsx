@@ -1,4 +1,3 @@
-// @ts-ignore
 
 "use client";
 
@@ -116,9 +115,11 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
         router.push("/login?message=Please check your email and verify your account before signing in");
       }, 3000);
 
-    } catch (error: any) {
+  } catch (error: unknown) {
       console.error('Signup error:', error);
-      setMessage({type: 'error', text: error.message || 'An unexpected error occurred'});
+  let errorMsg = 'An unexpected error occurred';
+  if (error instanceof Error) errorMsg = error.message;
+  setMessage({type: 'error', text: errorMsg});
     } finally {
       setLoading(false);
     }
@@ -136,7 +137,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
       if (error) {
         setMessage({type: 'error', text: error.message});
       }
-    } catch (error: any) {
+  } catch (error: unknown) {
       setMessage({type: 'error', text: 'Google signup failed. Please try again.'});
     }
   };
