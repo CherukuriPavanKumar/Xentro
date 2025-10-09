@@ -42,7 +42,7 @@ export function Tab({
         <Badge
           variant="secondary"
           className={cn(
-            "relative z-10 whitespace-nowrap shadow-none",
+            "relative z-10 whitespace-nowrap shadow-none dark:text-green-400 font-bold",
             // 👇 Removes border when Yearly (discounted) tab is selected
             selected ? "border-none bg-muted" : ""
           )}

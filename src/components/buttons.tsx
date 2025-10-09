@@ -5,6 +5,7 @@ import { Button } from "./ui/button"
 export function GradientButtonDemo() {
   return (
     <div className="flex gap-8">
+      <Link href="/signup">
       <Button
   className="
     inline-flex items-center justify-center
@@ -17,6 +18,8 @@ export function GradientButtonDemo() {
 >
   Get Started
 </Button>
+      </Link>
+      <Link href="/learn-more">
       <Button
   className="
     inline-flex items-center justify-center
@@ -29,6 +32,7 @@ export function GradientButtonDemo() {
 >
   Learn More
 </Button>
+      </Link>
 
     </div>
   )

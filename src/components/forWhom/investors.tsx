@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Investors() {
   return (
@@ -10,7 +11,7 @@ export default function Investors() {
       {/* Left Section: Text */}
       <div className="flex-1 text-left">
         <h2 className="text-4xl font-bold mb-6">
-          Deal flow designed for <span className="text-green-500 dark:text-green-400">Investors</span>
+          Deal flow designed for Investors
         </h2>
         <p className="text-gray-800 dark:text-gray-300 text-lg leading-relaxed mb-6">
           Access vetted, early signals from top student builders and mentor‑led 
@@ -19,17 +20,19 @@ export default function Investors() {
           Discover founders early, support them meaningfully, and watch momentum 
           compound with transparent progress and milestones.
         </p>
+        <Link href="/signup">
         <button
           className="px-6 py-3 rounded-xl font-medium
-            bg-gradient-to-r from-emerald-500 to-green-500 text-white
-            hover:from-emerald-400 hover:to-green-400
-            shadow-lg shadow-emerald-500/20
+            bg-gray-900 text-white dark:bg-white dark:text-gray-900
+            hover:bg-gray-800 dark:hover:bg-gray-100
+            shadow-lg shadow-gray-900/20 dark:shadow-white/20
             transition-all duration-300 ease-out
             hover:-translate-y-0.5 hover:shadow-xl
-            focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-gray-100 dark:focus:ring-offset-gray-900"
+            focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-100 dark:focus:ring-offset-gray-900"
         >
-          Explore opportunities
+          Explore oppurtunities
         </button>
+        </Link>
       </div>
 
       {/* Right Section: Image */}

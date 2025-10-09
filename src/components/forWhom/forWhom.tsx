@@ -26,7 +26,7 @@ export function ForWhom() {
                 ${
                   activeTab === tab
                     ? "bg-black dark:bg-white text-white dark:text-black hover:-translate-y-0.5"
-                    : "bg-gray-200 text-gray-800 dark:bg-slate-800 dark:text-gray-300 hover:bg-black hover:text-white hover:-translate-y-0.5"
+                    : "bg-gray-200 text-gray-800 dark:bg-slate-800 dark:text-gray-300 hover:bg-black hover:text-white hover:-translate-y-0.5 dark:hover:bg-white dark:hover:text-black"
                 } transition-colors`}
             >
               {tab}

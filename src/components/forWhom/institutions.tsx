@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Institutions() {
   return (
@@ -10,7 +11,7 @@ export default function Institutions() {
       {/* Left Section: Text */}
       <div className="flex-1 text-left">
         <h2 className="text-4xl font-bold mb-6">
-          Outcomes that matter for <span className="text-yellow-500 dark:text-yellow-400">Institutions</span>
+          Outcomes that matter for Institutions
         </h2>
         <p className="text-gray-800 dark:text-gray-300 text-lg leading-relaxed mb-6">
           Turn classrooms into launchpads. Xentro embeds project‑based learning, 
@@ -20,17 +21,19 @@ export default function Institutions() {
           Showcase institutional impact with measurable outcomes: shipped projects, 
           placements, and partnerships.
         </p>
+        <Link href="/signup">
         <button
           className="px-6 py-3 rounded-xl font-medium
-            bg-gradient-to-r from-amber-500 to-yellow-500 text-white
-            hover:from-amber-400 hover:to-yellow-400
-            shadow-lg shadow-amber-500/20
+            bg-gray-900 text-white dark:bg-white dark:text-gray-900
+            hover:bg-gray-800 dark:hover:bg-gray-100
+            shadow-lg shadow-gray-900/20 dark:shadow-white/20
             transition-all duration-300 ease-out
             hover:-translate-y-0.5 hover:shadow-xl
-            focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-gray-100 dark:focus:ring-offset-gray-900"
+            focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-100 dark:focus:ring-offset-gray-900"
         >
-          Bring Xentro to campus
+          Bring Xentro to Campus
         </button>
+        </Link>
       </div>
 
       {/* Right Section: Image */}

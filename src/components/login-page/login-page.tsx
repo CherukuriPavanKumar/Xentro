@@ -7,8 +7,17 @@ export default function LoginPageComponent() {
       <div className="relative z-10 flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
           <a href="/" className="flex items-center gap-2 font-medium">
-            <div className="bg-primary text-primary-foreground flex size-10 items-center justify-center rounded-md">
-              <img src="/XentroLogo.png" alt="Xentro Logo" className="h-10 w-10"/>
+            <div className="text-primary-foreground flex size-10 items-center justify-center rounded-md">
+              <img 
+    src="/XENTRO-WHITE.png" 
+    alt="Xentro Logo" 
+    className="w-7 h-7 object-contain drop-shadow-sm dark:hidden rounded-sm"
+  />
+  <img 
+    src="/XENTRO-DARK.png" 
+    alt="Xentro Logo" 
+    className="w-7 h-7 object-contain drop-shadow-sm hidden dark:block rounded-sm"
+  />
             </div>
             Xentro
           </a>

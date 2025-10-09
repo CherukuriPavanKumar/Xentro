@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { BadgeCheck, ArrowRight } from "lucide-react"
+import { BadgeCheck, ArrowRight, Link } from "lucide-react"
 import NumberFlow from "@number-flow/react"
 
 import { cn } from "@/lib/utils"
@@ -46,7 +46,7 @@ export function PricingCard({ tier, paymentFrequency }: PricingCardProps) {
         {tier.name}
         {isPopular && (
           <Badge variant="secondary" className="text-lg mt-1 z-10 whitespace-nowrap">
-            🔥 Most Popular
+             Most Popular
           </Badge>
         )}
       </h2>
@@ -89,7 +89,6 @@ export function PricingCard({ tier, paymentFrequency }: PricingCardProps) {
           ))}
         </ul>
       </div>
-
       <Button
         variant={isHighlighted ? "secondary" : "default"}
         className="w-full"
