@@ -70,7 +70,7 @@ function Comparision() {
             </li>
             <li className="flex items-start gap-3 py-3">
               <IconX className="text-red-500 h-5 w-5 flex-shrink-0 mt-1" />
-              <span>They're reactive. We're built for what's next.</span>
+              <span>They&apos;re reactive. We&apos;re built for what&apos;s next.</span>
             </li>
           </ul>
         </div>

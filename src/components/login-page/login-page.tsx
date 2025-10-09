@@ -1,12 +1,13 @@
 import { LoginForm } from "@/components/login-page/login-form"
 import AuthHero from "../ui/auth-hero"
+import Link from "next/link"
 
 export default function LoginPageComponent() {
   return (
     <div className="relative grid min-h-svh lg:grid-cols-2 overflow-hidden">
       <div className="relative z-10 flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
-          <a href="/" className="flex items-center gap-2 font-medium">
+          <Link href="/" className="flex items-center gap-2 font-medium">
             <div className="text-primary-foreground flex size-10 items-center justify-center rounded-md">
               <img 
     src="/XENTRO-WHITE.png" 
@@ -20,7 +21,7 @@ export default function LoginPageComponent() {
   />
             </div>
             Xentro
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-1 items-center justify-center">

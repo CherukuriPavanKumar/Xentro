@@ -56,7 +56,7 @@ export default function WaitlistPage() {
           </h1>
 
           <p className="text-lg text-slate-300 font-light">
-            India's next-generation entrepreneurship platform
+            India&apos;s next-generation entrepreneurship platform
           </p>
         </motion.div>
 
