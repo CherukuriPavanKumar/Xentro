@@ -64,7 +64,7 @@ const MarqueeCard = ({ img }: { img: string }) => {
 	return (
 		<figure
 			className={cn(
-				"relative h-18 w-18 cursor-pointer overflow-hidden rounded-xl border ",
+				"relative h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18 cursor-pointer overflow-hidden rounded-xl border ",
 				// light styles
 				"border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
 				// dark styles
@@ -86,7 +86,7 @@ export function MarqueeDemo() {
 	return (
 		<div className="relative flex w-screen flex-col overflow-hidden py-20">
 			<div className="relative z-10 mb-5 text-center">
-				<h1 className="mb-1 bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 bg-clip-text text-4xl font-bold text-transparent md:text-3xl lg:text-4xl dark:from-gray-100 dark:via-gray-400 dark:to-gray-100">
+				<h1 className="mb-1 bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 bg-clip-text text-2xl px-4 font-bold text-transparent md:text-3xl lg:text-4xl dark:from-gray-100 dark:via-gray-400 dark:to-gray-100">
 					Trusted by Institutions and Ecosystem Partners
 				</h1>
 			</div>

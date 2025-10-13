@@ -8,7 +8,7 @@ export default function WaitlistLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <div className="min-h-screen bg-background dark">
+      <div className="min-h-screen bg-background">
         {children}
       </div>
   );

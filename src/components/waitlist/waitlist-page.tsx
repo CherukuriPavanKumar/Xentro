@@ -34,8 +34,8 @@ export default function WaitlistPage() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-xl flex items-center justify-center">
-            <span className="text-white font-bold text-lg">X</span>
+          <div className="w-10 h-10 flex items-center justify-center">
+            <img src="/XENTRO-DARK.png" alt="Xentro Logo" className="rounded-lg" />
           </div>
           <span className="text-2xl font-semibold text-white">Xentro</span>
         </motion.div>

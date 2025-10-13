@@ -4,11 +4,11 @@ import { IconCheck, IconX } from '@tabler/icons-react';
 function Comparision() {
   return (
     <div>
-      <h1 className="font-bold text-center text-4xl mt-20 text-black dark:text-slate-200">
+      <h2 className="text-center font-bold text-3xl sm:text-4xl lg:text-5xl mt-16 mb-8 text-gray-900 dark:text-gray-100">
         Xentro vs Others
-      </h1>
+      </h2>
 
-      <div className="flex flex-row justify-center max-w-5xl mx-auto gap-5 mt-7 mb-10">
+      <div className="flex flex-col md:flex-row justify-center max-w-5xl mx-auto gap-5 mt-7 mb-10 px-4">
         {/* Xentro Column */}
         <div className="w-full rounded-3xl p-[2px]">
           <div className="bg-black dark:bg-white rounded-3xl p-6 h-full">

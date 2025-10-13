@@ -48,7 +48,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
             username: username.trim(),
             full_name: username.trim()
           },
-          emailRedirectTo: `${window.location.origin}/waitlist`
+          emailRedirectTo: `https://xentro.in/waitlist`
         },
       });
 
@@ -130,7 +130,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
       const { error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-          redirectTo: `${window.location.origin}/waitlist`
+          redirectTo: `https://xentro.in/waitlist`
         }
       });
       

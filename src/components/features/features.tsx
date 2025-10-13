@@ -5,7 +5,7 @@ function Features() {
     <div className="max-w-6xl mx-auto px-4">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
       {/* Card 1 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-2 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
         <img src="/features/image.png" alt="icon" className="h-32 object-cover mb-4 dark:hidden" />
         <img src="/features/rocket.png" alt="icon" className="h-32 object-cover mb-4 hidden dark:block" />
 
@@ -16,7 +16,7 @@ function Features() {
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-2 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
         <img src="/features/Mentor bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
         <img src="/features/Mentor wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
         <h3 className="text-lg font-semibold text-black dark:text-gray-200">Mentorship Network</h3>
@@ -26,7 +26,7 @@ function Features() {
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-2 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
         <img src="/features/Investor bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
         <img src="/features/Investor wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
 
@@ -37,7 +37,7 @@ function Features() {
       </div>
 
       {/* Card 4 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-2 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
         <img src="/features/Institution bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
         <img src="/features/Institution wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
         <h3 className="text-lg font-semibold text-black dark:text-gray-200">Institutional Support</h3>
@@ -47,7 +47,7 @@ function Features() {
       </div>
 
       {/* Card 5 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-2 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
         <img src="/features/Events bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
         <img src="/features/Events wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
         <h3 className="text-lg font-semibold text-black dark:text-gray-200">Events & Hackathons</h3>
@@ -57,7 +57,7 @@ function Features() {
       </div>
 
       {/* Card 6 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-2 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
         <img src="/features/Collaboration bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
         <img src="/features/Collaboration wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
         <h3 className="text-lg font-semibold text-black dark:text-gray-200">Collaborative Idea Building</h3>
