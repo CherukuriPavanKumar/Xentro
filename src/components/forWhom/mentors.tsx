@@ -37,7 +37,7 @@ export default function Mentors() {
 
       {/* Right Section: Image */}
       <div className="flex-1 flex justify-center">
-        <div className="relative w-[400px] h-[400px]">
+        <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px]">
           <Image
             src="/forWhom/mentorsPic.jpg"
             alt="Mentors illustration"
