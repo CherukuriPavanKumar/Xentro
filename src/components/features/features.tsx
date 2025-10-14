@@ -1,73 +1,111 @@
-import React from 'react'
+"use client";
+import React, { useEffect, useRef } from "react";
 
 function Features() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const cards = [
+    {
+      title: "Student Innovation Hub",
+      lightImg: "/features/image.png",
+      darkImg: "/features/rocket.png",
+      text: "A launchpad where students share ideas, projects, and early-stage startups.",
+    },
+    {
+      title: "Mentorship Network",
+      lightImg: "/features/Mentor bw.png",
+      darkImg: "/features/Mentor wb.png",
+      text: "Direct guidance from experienced entrepreneurs, professors, and industry experts.",
+    },
+    {
+      title: "Investor Access",
+      lightImg: "/features/Investor bw.png",
+      darkImg: "/features/Investor wb.png",
+      text: "Connects student founders with angel investors and Venture Capitalists.",
+    },
+    {
+      title: "Institutional Support",
+      lightImg: "/features/Institution bw.png",
+      darkImg: "/features/Institution wb.png",
+      text: "Students get matched with the right universities, incubators to support their specific needs.",
+    },
+    {
+      title: "Events & Hackathons",
+      lightImg: "/features/Events bw.png",
+      darkImg: "/features/Events wb.png",
+      text: "Central hub for entrepreneurship events, hackathons, and pitch nights.",
+    },
+    {
+      title: "Collaborative Idea Building",
+      lightImg: "/features/Collaboration bw.png",
+      darkImg: "/features/Collaboration wb.png",
+      text: "A space where students can post startup ideas and recruit co-founders or teammates.",
+    },
+  ];
+
+  // 🌀 Auto-slide effect only on mobile
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    let scrollAmount = 0;
+    const slideWidth = container.scrollWidth / cards.length;
+    const interval = setInterval(() => {
+      if (window.innerWidth < 768) { // only on mobile
+        scrollAmount += slideWidth;
+        if (scrollAmount >= container.scrollWidth - container.clientWidth) {
+          scrollAmount = 0;
+        }
+        container.scrollTo({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      }
+    }, 3000); // slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="max-w-6xl mx-auto px-4">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-      {/* Card 1 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
-        <img src="/features/image.png" alt="icon" className="h-32 object-cover mb-4 dark:hidden" />
-        <img src="/features/rocket.png" alt="icon" className="h-32 object-cover mb-4 hidden dark:block" />
-
-        <h3 className="text-xl font-semibold text-black dark:text-gray-200">Student Innovation Hub</h3>
-        <p className="text-gray-600 dark:text-gray-200 mt-2">
-        A launchpad where students share ideas, projects, and early-stage startups.
-        </p>
-      </div>
-
-      {/* Card 2 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
-        <img src="/features/Mentor bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
-        <img src="/features/Mentor wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
-        <h3 className="text-lg font-semibold text-black dark:text-gray-200">Mentorship Network</h3>
-        <p className="text-gray-600 mt-2 dark:text-gray-200">
-        Direct guidance from experienced entrepreneurs, professors, and industry experts.
-        </p>
-      </div>
-
-      {/* Card 3 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
-        <img src="/features/Investor bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
-        <img src="/features/Investor wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
-
-        <h3 className="text-lg font-semibold text-black dark:text-gray-200">Investor Access</h3>
-        <p className="text-gray-600 mt-2 dark:text-gray-200">
-        Connects student founders with angel investors and Venture Capitalists.
-        </p>
-      </div>
-
-      {/* Card 4 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
-        <img src="/features/Institution bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
-        <img src="/features/Institution wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
-        <h3 className="text-lg font-semibold text-black dark:text-gray-200">Institutional Support</h3>
-        <p className="text-gray-600 mt-2 dark:text-gray-200">
-        Students get matched with the right universities, incubators to support their specific needs.
-        </p>
-      </div>
-
-      {/* Card 5 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
-        <img src="/features/Events bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
-        <img src="/features/Events wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
-        <h3 className="text-lg font-semibold text-black dark:text-gray-200">Events & Hackathons</h3>
-        <p className="text-gray-600 mt-2 dark:text-gray-200">
-        Central hub for entrepreneurship events, hackathons, and pitch nights
-        </p>
-      </div>
-
-      {/* Card 6 */}
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border-1 border-black dark:border-white shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition transform transition-transform hover:scale-105">
-        <img src="/features/Collaboration bw.png" alt="icon" className="h-32 object-contain mb-4 dark:hidden" />
-        <img src="/features/Collaboration wb.png" alt="icon" className="h-32 object-contain mb-4 hidden dark:block" />
-        <h3 className="text-lg font-semibold text-black dark:text-gray-200">Collaborative Idea Building</h3>
-        <p className="text-gray-600 mt-2 dark:text-gray-200">
-        A space where students can post startup ideas and recruit co-founders or teammates.
-        </p>
+    <div className="max-w-6xl mx-auto px-4 mt-10">
+      <div
+        ref={scrollRef}
+        className="
+          flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-6 pb-4
+          md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible
+          [&::-webkit-scrollbar]:hidden
+        "
+      >
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="
+              min-w-[85%] sm:min-w-[45%] md:min-w-0
+              bg-white dark:bg-gray-900 rounded-2xl border border-black dark:border-white 
+              shadow-lg p-6 flex flex-col items-center text-center 
+              hover:shadow-xl transform transition-transform hover:scale-105
+              snap-center
+            "
+          >
+            <img
+              src={card.lightImg}
+              alt="icon"
+              className="h-32 object-contain mb-4 dark:hidden"
+            />
+            <img
+              src={card.darkImg}
+              alt="icon"
+              className="h-32 object-contain mb-4 hidden dark:block"
+            />
+            <h3 className="text-lg font-semibold text-black dark:text-gray-200">
+              {card.title}
+            </h3>
+            <p className="text-gray-600 mt-2 dark:text-gray-200">{card.text}</p>
+          </div>
+        ))}
       </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Features
+export default Features;
