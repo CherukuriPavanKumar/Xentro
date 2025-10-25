@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -101,7 +100,7 @@ const DivGrid = ({
           ? Math.hypot(clickedCell.row - rowIdx, clickedCell.col - colIdx)
           : 0;
         const delay = clickedCell ? Math.max(0, distance * 55) : 0; // ms
-        const duration = 200 + distance * 80; // ms
+        const duration = 150 + distance * 80; // ms
 
         const style: CellStyle = clickedCell
           ? {

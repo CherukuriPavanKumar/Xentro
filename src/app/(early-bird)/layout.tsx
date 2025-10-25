@@ -1,14 +1,13 @@
 import React from "react";
 import "../globals.css";
-import Particles from '@/components/Particles';
 
-export default function WaitlistLayout({
+export default function EarlyBirdLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-      <div className="min-h-screen bg-background dark">
+      <div className="min-h-screen bg-background">
         {children}
       </div>
   );

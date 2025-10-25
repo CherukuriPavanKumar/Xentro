@@ -9,7 +9,7 @@ export function ForWhom() {
   const [activeTab, setActiveTab] = useState("Students");
 
   return (
-    <div className="flex justify-center items-center min-h-screen px-4">
+    <div className="flex justify-center items-center px-4 ">
       <div className="w-full max-w-6xl">
         
         {/* Outer glowing container */}
