@@ -2,25 +2,15 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Check, Sparkles, Users, Zap, Crown } from 'lucide-react';
+import { Check } from 'lucide-react';
+import { useRouter } from "next/navigation";
 
 export default function EarlyBirdPage() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
+  const router = useRouter();
 
   const handlePaidPlan = async () => {
-    setIsLoading(true);
     setTimeout(() => {
-      setIsLoading(false);
-      setShowSuccess(true);
-    }, 1500);
-  };
-
-  const handleFreePlan = async () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-      setShowSuccess(true);
+      //here i will write the  code for razorpay gateway
     }, 1500);
   };
 
@@ -75,10 +65,6 @@ export default function EarlyBirdPage() {
             className="relative group"
           >
             <div className="relative bg-slate-900/50 backdrop-blur-xl rounded-2xl p-5 border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 h-full flex flex-col">
-              {/* <div className="w-12 h-12 bg-gradient-to-br from-slate-700/20 to-slate-600/20 rounded-xl flex items-center justify-center mb-3 border border-slate-700/30">
-                <Users className="w-6 h-6 text-slate-400" />
-              </div> */}
-
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">
                 Join the Waitlist
               </h3>
@@ -112,26 +98,7 @@ export default function EarlyBirdPage() {
                 ))}
               </ul>
 
-              <motion.button
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.96 }}
-                onClick={handleFreePlan}
-                disabled={isLoading}
-                className="w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2.5 rounded-xl transition-all duration-300 border border-slate-700 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isLoading ? (
-                  <span className="flex items-center justify-center gap-2">
-                    <motion.div
-                      animate={{ rotate: 360 }}
-                      transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-                      className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
-                    />
-                    Processing...
-                  </span>
-                ) : (
-                  'Join Waitlist'
-                )}
-              </motion.button>
+              <button onClick={() => router.push("/waitlist")} className='w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-2.5 rounded-xl transition-all duration-300 border border-slate-700 disabled:opacity-50 disabled:cursor-not-allowed'>Join Waitlist</button>
             </div>
           </motion.div>
 
@@ -145,11 +112,6 @@ export default function EarlyBirdPage() {
   className="relative"
 >
   <div className="bg-slate-900/90 border border-slate-700 rounded-2xl p-6 shadow-lg hover:shadow-blue-500/10 transition-shadow duration-300 flex flex-col h-full">
-    {/* Icon */}
-    {/* <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-4 border border-slate-700">
-      <Zap className="w-6 h-6 text-blue-400" />
-    </div> */}
-
     {/* Title */}
     <h3 className="text-2xl font-bold text-white mb-1">Early Bird Access</h3>
 
@@ -187,27 +149,7 @@ export default function EarlyBirdPage() {
       ))}
     </ul>
 
-    {/* Button */}
-    <motion.button
-      whileHover={{ scale: 1.04 }}
-      whileTap={{ scale: 0.97 }}
-      onClick={handlePaidPlan}
-      disabled={isLoading}
-      className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 rounded-xl transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-    >
-      {isLoading ? (
-        <span className="flex items-center justify-center gap-2">
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-            className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
-          />
-          Processing...
-        </span>
-      ) : (
-        'Claim Early Access'
-      )}
-    </motion.button>
+    <button onClick={handlePaidPlan} className='w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 rounded-xl transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed'>Claim Early Access</button>
   </div>
 </motion.div>
 

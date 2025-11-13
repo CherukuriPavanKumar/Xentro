@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Xentro" }],
   creator: "Xentro",
   publisher: "Xentro",
-  metadataBase: new URL('https://xentro.in'), // Replace with your actual domain
+  metadataBase: new URL('https://xentro.in'), 
   icons: {
     icon: [
       { url: '/XENTRO-WHITE.png', type: 'image/png' },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://xentro.in', // Replace with your actual domain
+    url: 'https://xentro.in', 
     title: "Xentro - India's First Digital Incubator for Students",
     description: "XENTRO is India's first digital incubator for students — connecting young innovators with mentors, investors, and institutions to turn ideas into thriving startups.",
     siteName: 'Xentro',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Xentro - India's First Digital Incubator for Students",
     description: "XENTRO is India's first digital incubator for students — connecting young innovators with mentors, investors, and institutions to turn ideas into thriving startups.",
     images: ['/XENTRO-WHITE.png'],
-    creator: '@xentro', // Replace with your Twitter handle
+    creator: '@xentro', 
   },
   robots: {
     index: true,

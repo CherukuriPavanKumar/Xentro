@@ -5,7 +5,7 @@ function Comparision() {
   return (
     <div>
       <h2 className="text-center font-bold text-3xl sm:text-4xl lg:text-5xl mt-16 mb-8 text-gray-900 dark:text-gray-100">
-        Xentro vs Others
+        Xentro vs Others 
       </h2>
 
       <div className="flex flex-col md:flex-row justify-center max-w-5xl mx-auto gap-5 mt-7 mb-10 px-4">

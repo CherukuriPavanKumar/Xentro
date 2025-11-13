@@ -2,59 +2,79 @@ import { cn } from "@/lib/utils";
 import { Marquee } from "./marquee";
 
 const MarqueeElements = [
+    {
+        id: "school-1",
+        img: "/school1.avif",
+        name: "School 1",
+        alt: "School 1 Logo",
+    },
+    {
+        id: "school-2",
+        img: "/school2.jpeg",
+        name: "School 2",
+        alt: "School 2 Logo",
+    },
+    {
+        id: "school-3",
+        img: "/school3.png",
+        name: "School 3",
+        alt: "School 3 Logo",
+    },
+    {
+        id: "school-4",
+        img: "/school4.jpeg",
+        name: "School 4",
+        alt: "School 4 Logo",
+    },
+    {
+        id: "school-5",
+        img: "/school5.png",
+        name: "School 5",
+        alt: "School 5 Logo",
+    },
+    {
+        id: "school-6",
+        img: "/school6.jpeg",
+        name: "School 6",
+        alt: "School 6 Logo",
+    },
 	{
-		id: "gitam-1",
-		img: "/GitamLogo.jpg",
-		name: "GITAM University",
-		alt: "GITAM University Logo",
-	},
-	{
-		id: "gitam-2",
-		img: "/GitamLogo.jpg",
-		name: "GITAM University",
-		alt: "GITAM University Logo",
-	},
-	{
-		id: "partner-3",
-		img: "/GitamLogo.jpg",
-		name: "Partner 3",
-		alt: "Partner 3 Logo",
-	},
-	{
-		id: "gitam-1",
-		img: "/GitamLogo.jpg",
-		name: "GITAM University",
-		alt: "GITAM University Logo",
-	},
-	{
-		id: "gitam-2",
-		img: "/GitamLogo.jpg",
-		name: "GITAM University",
-		alt: "GITAM University Logo",
-	},
-	{
-		id: "partner-3",
-		img: "/GitamLogo.jpg",
-		name: "Partner 3",
-		alt: "Partner 3 Logo",
-	},{
-		id: "gitam-1",
-		img: "/GitamLogo.jpg",
-		name: "GITAM University",
-		alt: "GITAM University Logo",
-	},
-	{
-		id: "gitam-2",
-		img: "/GitamLogo.jpg",
-		name: "GITAM University",
-		alt: "GITAM University Logo",
-	},
-	{
-		id: "partner-3",
-		img: "/GitamLogo.jpg",
-		name: "Partner 3",
-		alt: "Partner 3 Logo",
-	},
+        id: "school-1",
+        img: "/school1.avif",
+        name: "School 1",
+        alt: "School 1 Logo",
+    },
+    {
+        id: "school-2",
+        img: "/school2.jpeg",
+        name: "School 2",
+        alt: "School 2 Logo",
+    },
+    {
+        id: "school-3",
+        img: "/school3.png",
+        name: "School 3",
+        alt: "School 3 Logo",
+    },
+    {
+        id: "school-4",
+        img: "/school4.jpeg",
+        name: "School 4",
+        alt: "School 4 Logo",
+    },
+    {
+        id: "school-5",
+        img: "/school5.png",
+        name: "School 5",
+        alt: "School 5 Logo",
+    },
+    {
+        id: "school-6",
+        img: "/school6.jpeg",
+        name: "School 6",
+        alt: "School 6 Logo",
+    },
+	
 ];
 
 const firstRow = MarqueeElements.slice(0, MarqueeElements.length / 2);
